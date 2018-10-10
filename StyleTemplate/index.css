@@ -1,0 +1,216 @@
+body{
+    background: #000000;
+    background: -webkit-linear-gradient(to top, #434343, #000000);
+    background: linear-gradient(to top, #434343, #000000);
+    height: 100vh;
+    overflow: hidden;
+    font-family: Verdana, sans-serif;
+    font-size: 12pt;
+}
+
+#content{
+    margin: auto;
+    width: 80%;
+    height: 90%;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+#login h1{
+    font-weight: 800;
+}
+
+/*Barra del menù*/
+.tab {
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.tab button {
+    cursor: pointer;
+    border: 0;
+    background-color: #333;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.tab a {
+    border: 0;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.tab a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.tab a#logout {
+    float: right;
+}
+
+/*LOGIN*/
+
+#login{
+    text-align: center;
+    margin: 10em auto;
+    width: 30em;
+    height: 20em;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+#login h1{
+    padding-top: 20px;
+    font-weight: 600;
+}
+
+#content-login{
+    border-color: transparent;
+    text-align: left;
+}
+
+label{
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+input{
+    padding: 5px 5px;
+    border-radius: 15px;
+    font-size: 12pt;
+    width: 97%;
+    background-color: #CFCFCF;
+    border-color: darkgrey;
+}
+
+input:hover{
+    background-color: darkgrey;
+}
+
+select{
+    padding: 5px 5px;
+    border-radius: 15px;
+    font-size: 12pt;
+    width: 97%;
+    background-color: #CFCFCF;
+    border-color: darkgrey;
+}
+
+select:hover{
+    background-color: darkgrey;
+}
+
+
+#btn{
+    margin: 20px auto;
+}
+
+#btn input[type='submit']{
+    height: 3em;
+    width: 7em;
+    background-color: #CFCFCF;
+    border-color: darkgrey;
+    border-radius: 10px;
+}
+
+#btn input[type='submit']:hover{
+    background-color: darkgrey;
+}
+
+.btn-general{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 3em;
+    width: 7em;
+    background-color: #CFCFCF;
+    border-color: darkgrey;
+    border-radius: 10px;
+}
+
+.btn-general:hover{
+    background-color: darkgrey;
+}
+
+#insert-new-background{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#insert-new{
+    margin: 30px auto;
+    width: 40%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+#insert-new h1{
+    font-weight: 600;
+}
+
+#insert-new label{
+    text-align: left;
+}
+
+table{
+    border-collapse: collapse;
+    height: 50%;
+    overflow-y: auto;
+}
+
+.menu-oggetti{
+    margin: 20px auto auto;
+    width: 80%;
+    height: 50%;
+    text-align: center;
+    overflow-y: auto;
+}
+
+tr,th,td{
+    height: 2em;
+}
+
+thead{
+    background-color: #ff0000;
+    border: 1px solid #ff0000;
+}
+
+tbody tr{
+    background-color: #EEEEEE;
+    border: 1px solid #999999;
+}
+
+tbody tr:hover{
+    background-color: #999999;
+}

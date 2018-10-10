@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin page</title>
+    <link rel="stylesheet" href="StyleTemplate/index.css">
+</head>
+<body>
+
+<div id="content">
+
+    <div class="tab">
+        <button data-target="menu" class="tab-links active">Menù</button>
+        <button data-target="ricerca" class="tab-links">Ricerca</button>
+        <button data-target="rendiconto" class="tab-links">Rendiconto</button>
+        <button data-target="impostazioni" class="tab-links">Impostazioni</button>
+        <a href="Server/logout.php" id="logout">Logout</a>
+    </div>
+
+    <div id="menu" class="tab-content">
+        <button class="btn-general" id="ins-new">Inserisci nuovo</button>
+        <div id="insert-new-background">
+            <div id="insert-new">
+                <h2>Inserisci nuova</h2>
+                <form id="nuovo-oggetto">
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" name="nome">
+                    <label for="prezzo">Prezzo:</label>
+                    <input type="text" id="prezzo" name="prezzo">
+                    <label for="tipo">Tipo:</label>
+                    <select id="tipo" name="tipo">
+                        <option>Primo</option>
+                        <option>Secondo</option>
+                        <option>Contorno</option>
+                        <option>Bibita</option>
+                        <option>Dolce</option>
+                    </select>
+                    <button class="btn-general" id="in-salva">Salva</button>
+                    <button class="btn-general" id="in-annulla">Annulla</button>
+                </form>
+            </div>
+        </div>
+
+        <table class="menu-oggetti">
+            <thead>
+                <tr>
+                    <th>NOME</th>
+                    <th>TIPO</th>
+                    <th>PREZZO</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                [#table-menu]
+            </tbody>
+        </table>
+
+        <table class="menu-oggetti">
+            <thead>
+            <tr>
+                <th>NOME</th>
+                <th>TIPO</th>
+                <th>PREZZO</th>
+                <th></th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            [#table-menu]
+            </tbody>
+        </table>
+    </div>
+
+    <!--
+    Menu (divisione delle sezioni in base al cibo  e icone o qualcosa tipo abbreviazioni per indicare
+            dove vengono servite e quali utenti possono usare)
+    Ricerca (visualizza una serie di viste in base alle query)
+    Rendiconto (Visualizza il totale dell'intera sagra)
+    Impostazioni
+        0. Luoghi a disposizione
+        1. Utenti
+        2. Stampanti con loro utilizzo
+        3. Numero tavoli
+        4. Resetta dati rendiconto (protetto da password)
+        5. Resetta tutto (protetto da password)
+    -->
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="Client/admin.js"></script>
+
+</body>
+</html>
